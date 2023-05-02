@@ -1,0 +1,12 @@
+[submodule "RuSentEval"]
+	path = RuSentEval
+	url = git@github.com:Leo-nid/RuSentEval.git
+	branch = hebrew_adaptationg
+[submodule "UD_Hebrew-IAHLTwiki"]
+	path = UD_Hebrew-IAHLTwiki
+	url = git@github.com:UniversalDependencies/UD_Hebrew-IAHLTwiki.git
+	branch = dev
+[submodule "UD_Hebrew-HTB"]
+	path = UD_Hebrew-HTB
+	url = git@github.com:UniversalDependencies/UD_Hebrew-HTB.git
+	branch = dev
