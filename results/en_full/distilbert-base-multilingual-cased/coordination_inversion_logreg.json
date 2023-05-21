@@ -1,0 +1,95 @@
+{
+    "model_name": "distilbert-base-multilingual-cased",
+    "probe_task": "coordination_inversion",
+    "1": {
+        "va_score": 0.536,
+        "l2reg": 1e-05,
+        "tr_loss": 0.689,
+        "va_loss": 0.69,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.693,
+        "te_score": 0.532
+    },
+    "2": {
+        "va_score": 0.577,
+        "l2reg": 1e-05,
+        "tr_loss": 0.681,
+        "va_loss": 0.68,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.677,
+        "te_score": 0.578
+    },
+    "3": {
+        "va_score": 0.611,
+        "l2reg": 1e-05,
+        "tr_loss": 0.668,
+        "va_loss": 0.666,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.664,
+        "te_score": 0.6
+    },
+    "4": {
+        "va_score": 0.623,
+        "l2reg": 1e-05,
+        "tr_loss": 0.653,
+        "va_loss": 0.656,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.652,
+        "te_score": 0.617
+    },
+    "5": {
+        "va_score": 0.61,
+        "l2reg": 1e-05,
+        "tr_loss": 0.665,
+        "va_loss": 0.665,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.657,
+        "te_score": 0.612
+    },
+    "6": {
+        "va_score": 0.579,
+        "l2reg": 1e-05,
+        "tr_loss": 0.68,
+        "va_loss": 0.68,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.675,
+        "te_score": 0.578
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cuda",
+        "input_dim": 768,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 2,
+        "learning_rate": 0.01,
+        "clf": "logreg",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "SentEval/data/probing"
+    }
+}

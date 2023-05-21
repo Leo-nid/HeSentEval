@@ -1,0 +1,95 @@
+{
+    "model_name": "distilbert-base-multilingual-cased",
+    "probe_task": "past_present",
+    "1": {
+        "va_score": 0.738,
+        "l2reg": 1e-05,
+        "tr_loss": 0.552,
+        "va_loss": 0.559,
+        "label_encoder": {
+            "Pres": 0,
+            "Past": 1
+        },
+        "te_loss": 0.544,
+        "te_score": 0.735
+    },
+    "2": {
+        "va_score": 0.775,
+        "l2reg": 0.0001,
+        "tr_loss": 0.513,
+        "va_loss": 0.514,
+        "label_encoder": {
+            "Pres": 0,
+            "Past": 1
+        },
+        "te_loss": 0.498,
+        "te_score": 0.756
+    },
+    "3": {
+        "va_score": 0.805,
+        "l2reg": 0.001,
+        "tr_loss": 0.461,
+        "va_loss": 0.462,
+        "label_encoder": {
+            "Pres": 0,
+            "Past": 1
+        },
+        "te_loss": 0.436,
+        "te_score": 0.8
+    },
+    "4": {
+        "va_score": 0.831,
+        "l2reg": 1e-05,
+        "tr_loss": 0.419,
+        "va_loss": 0.417,
+        "label_encoder": {
+            "Pres": 0,
+            "Past": 1
+        },
+        "te_loss": 0.384,
+        "te_score": 0.833
+    },
+    "5": {
+        "va_score": 0.835,
+        "l2reg": 1e-05,
+        "tr_loss": 0.436,
+        "va_loss": 0.428,
+        "label_encoder": {
+            "Pres": 0,
+            "Past": 1
+        },
+        "te_loss": 0.385,
+        "te_score": 0.824
+    },
+    "6": {
+        "va_score": 0.827,
+        "l2reg": 1e-05,
+        "tr_loss": 0.449,
+        "va_loss": 0.44,
+        "label_encoder": {
+            "Pres": 0,
+            "Past": 1
+        },
+        "te_loss": 0.402,
+        "te_score": 0.817
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cuda",
+        "input_dim": 768,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 2,
+        "learning_rate": 0.01,
+        "clf": "logreg",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "data/he"
+    }
+}

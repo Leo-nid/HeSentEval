@@ -10,3 +10,6 @@
 	path = UD_Hebrew-HTB
 	url = git@github.com:UniversalDependencies/UD_Hebrew-HTB.git
 	branch = dev
+[submodule "SentEval"]
+	path = SentEval
+	url = git@github.com:facebookresearch/SentEval.git

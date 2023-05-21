@@ -1,0 +1,215 @@
+{
+    "model_name": "facebook/mbart-large-50",
+    "probe_task": "sent_len",
+    "1": {
+        "va_score": 0.877,
+        "l2reg": 1e-05,
+        "tr_loss": 0.489,
+        "va_loss": 0.465,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.302,
+        "te_score": 0.874
+    },
+    "2": {
+        "va_score": 0.882,
+        "l2reg": 1e-05,
+        "tr_loss": 0.507,
+        "va_loss": 0.47,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.32,
+        "te_score": 0.862
+    },
+    "3": {
+        "va_score": 0.9,
+        "l2reg": 1e-05,
+        "tr_loss": 0.469,
+        "va_loss": 0.431,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.281,
+        "te_score": 0.88
+    },
+    "4": {
+        "va_score": 0.9,
+        "l2reg": 0.0001,
+        "tr_loss": 0.462,
+        "va_loss": 0.422,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.27,
+        "te_score": 0.888
+    },
+    "5": {
+        "va_score": 0.884,
+        "l2reg": 1e-05,
+        "tr_loss": 0.555,
+        "va_loss": 0.487,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.314,
+        "te_score": 0.867
+    },
+    "6": {
+        "va_score": 0.888,
+        "l2reg": 1e-05,
+        "tr_loss": 0.531,
+        "va_loss": 0.466,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.302,
+        "te_score": 0.877
+    },
+    "7": {
+        "va_score": 0.886,
+        "l2reg": 0.001,
+        "tr_loss": 0.478,
+        "va_loss": 0.44,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.342,
+        "te_score": 0.854
+    },
+    "8": {
+        "va_score": 0.898,
+        "l2reg": 1e-05,
+        "tr_loss": 0.406,
+        "va_loss": 0.391,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.261,
+        "te_score": 0.888
+    },
+    "9": {
+        "va_score": 0.881,
+        "l2reg": 0.0001,
+        "tr_loss": 0.515,
+        "va_loss": 0.451,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.299,
+        "te_score": 0.874
+    },
+    "10": {
+        "va_score": 0.892,
+        "l2reg": 0.0001,
+        "tr_loss": 0.434,
+        "va_loss": 0.406,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.25,
+        "te_score": 0.891
+    },
+    "11": {
+        "va_score": 0.902,
+        "l2reg": 1e-05,
+        "tr_loss": 0.444,
+        "va_loss": 0.408,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.251,
+        "te_score": 0.894
+    },
+    "12": {
+        "va_score": 0.887,
+        "l2reg": 0.0001,
+        "tr_loss": 0.554,
+        "va_loss": 0.513,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.329,
+        "te_score": 0.875
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cpu",
+        "input_dim": 1024,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 6,
+        "learning_rate": 0.01,
+        "clf": "mlp",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "data/he"
+    }
+}

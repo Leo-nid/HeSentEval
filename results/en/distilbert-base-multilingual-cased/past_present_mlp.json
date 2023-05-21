@@ -1,0 +1,95 @@
+{
+    "model_name": "distilbert-base-multilingual-cased",
+    "probe_task": "past_present",
+    "1": {
+        "va_score": 0.862,
+        "l2reg": 1e-05,
+        "tr_loss": 0.426,
+        "va_loss": 0.383,
+        "label_encoder": {
+            "PAST": 0,
+            "PRES": 1
+        },
+        "te_loss": 0.39,
+        "te_score": 0.831
+    },
+    "2": {
+        "va_score": 0.885,
+        "l2reg": 0.0001,
+        "tr_loss": 0.358,
+        "va_loss": 0.333,
+        "label_encoder": {
+            "PAST": 0,
+            "PRES": 1
+        },
+        "te_loss": 0.357,
+        "te_score": 0.857
+    },
+    "3": {
+        "va_score": 0.892,
+        "l2reg": 0.0001,
+        "tr_loss": 0.342,
+        "va_loss": 0.316,
+        "label_encoder": {
+            "PAST": 0,
+            "PRES": 1
+        },
+        "te_loss": 0.344,
+        "te_score": 0.868
+    },
+    "4": {
+        "va_score": 0.893,
+        "l2reg": 1e-05,
+        "tr_loss": 0.332,
+        "va_loss": 0.306,
+        "label_encoder": {
+            "PAST": 0,
+            "PRES": 1
+        },
+        "te_loss": 0.335,
+        "te_score": 0.872
+    },
+    "5": {
+        "va_score": 0.894,
+        "l2reg": 1e-05,
+        "tr_loss": 0.364,
+        "va_loss": 0.307,
+        "label_encoder": {
+            "PAST": 0,
+            "PRES": 1
+        },
+        "te_loss": 0.347,
+        "te_score": 0.867
+    },
+    "6": {
+        "va_score": 0.887,
+        "l2reg": 0.001,
+        "tr_loss": 0.383,
+        "va_loss": 0.326,
+        "label_encoder": {
+            "PAST": 0,
+            "PRES": 1
+        },
+        "te_loss": 0.372,
+        "te_score": 0.855
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cuda",
+        "input_dim": 768,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 2,
+        "learning_rate": 0.01,
+        "clf": "mlp",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "data/en"
+    }
+}

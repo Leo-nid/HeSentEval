@@ -1,0 +1,119 @@
+{
+    "model_name": "distilbert-base-multilingual-cased",
+    "probe_task": "sent_len",
+    "1": {
+        "va_score": 0.742,
+        "l2reg": 1e-05,
+        "tr_loss": 0.804,
+        "va_loss": 0.78,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.637,
+        "te_score": 0.721
+    },
+    "2": {
+        "va_score": 0.769,
+        "l2reg": 1e-05,
+        "tr_loss": 0.764,
+        "va_loss": 0.746,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.6,
+        "te_score": 0.748
+    },
+    "3": {
+        "va_score": 0.754,
+        "l2reg": 1e-05,
+        "tr_loss": 0.782,
+        "va_loss": 0.769,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.625,
+        "te_score": 0.732
+    },
+    "4": {
+        "va_score": 0.714,
+        "l2reg": 1e-05,
+        "tr_loss": 0.806,
+        "va_loss": 0.809,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.658,
+        "te_score": 0.698
+    },
+    "5": {
+        "va_score": 0.657,
+        "l2reg": 0.0001,
+        "tr_loss": 0.948,
+        "va_loss": 0.929,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.79,
+        "te_score": 0.642
+    },
+    "6": {
+        "va_score": 0.585,
+        "l2reg": 1e-05,
+        "tr_loss": 1.122,
+        "va_loss": 1.091,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.98,
+        "te_score": 0.572
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cuda",
+        "input_dim": 768,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 6,
+        "learning_rate": 0.01,
+        "clf": "logreg",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "data/he"
+    }
+}

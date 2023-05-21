@@ -1,0 +1,167 @@
+{
+    "model_name": "xlm-roberta-base",
+    "probe_task": "bigram_shift",
+    "1": {
+        "va_score": 0.506,
+        "l2reg": 0.01,
+        "tr_loss": 0.694,
+        "va_loss": 0.695,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.695,
+        "te_score": 0.497
+    },
+    "2": {
+        "va_score": 0.674,
+        "l2reg": 1e-05,
+        "tr_loss": 0.62,
+        "va_loss": 0.619,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.611,
+        "te_score": 0.663
+    },
+    "3": {
+        "va_score": 0.749,
+        "l2reg": 1e-05,
+        "tr_loss": 0.531,
+        "va_loss": 0.522,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.516,
+        "te_score": 0.741
+    },
+    "4": {
+        "va_score": 0.791,
+        "l2reg": 0.0001,
+        "tr_loss": 0.478,
+        "va_loss": 0.465,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.462,
+        "te_score": 0.779
+    },
+    "5": {
+        "va_score": 0.806,
+        "l2reg": 1e-05,
+        "tr_loss": 0.46,
+        "va_loss": 0.444,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.436,
+        "te_score": 0.794
+    },
+    "6": {
+        "va_score": 0.823,
+        "l2reg": 1e-05,
+        "tr_loss": 0.428,
+        "va_loss": 0.415,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.417,
+        "te_score": 0.81
+    },
+    "7": {
+        "va_score": 0.838,
+        "l2reg": 1e-05,
+        "tr_loss": 0.404,
+        "va_loss": 0.39,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.39,
+        "te_score": 0.824
+    },
+    "8": {
+        "va_score": 0.856,
+        "l2reg": 1e-05,
+        "tr_loss": 0.372,
+        "va_loss": 0.356,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.355,
+        "te_score": 0.844
+    },
+    "9": {
+        "va_score": 0.868,
+        "l2reg": 0.0001,
+        "tr_loss": 0.364,
+        "va_loss": 0.347,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.349,
+        "te_score": 0.848
+    },
+    "10": {
+        "va_score": 0.858,
+        "l2reg": 1e-05,
+        "tr_loss": 0.366,
+        "va_loss": 0.35,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.358,
+        "te_score": 0.843
+    },
+    "11": {
+        "va_score": 0.857,
+        "l2reg": 1e-05,
+        "tr_loss": 0.377,
+        "va_loss": 0.364,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.369,
+        "te_score": 0.839
+    },
+    "12": {
+        "va_score": 0.83,
+        "l2reg": 1e-05,
+        "tr_loss": 0.42,
+        "va_loss": 0.411,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.394,
+        "te_score": 0.828
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cuda",
+        "input_dim": 768,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 2,
+        "learning_rate": 0.01,
+        "clf": "logreg",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "SentEval/data/probing"
+    }
+}

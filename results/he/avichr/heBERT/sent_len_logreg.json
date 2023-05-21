@@ -1,0 +1,215 @@
+{
+    "model_name": "avichr/heBERT",
+    "probe_task": "sent_len",
+    "1": {
+        "va_score": 0.766,
+        "l2reg": 1e-05,
+        "tr_loss": 0.666,
+        "va_loss": 0.695,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.544,
+        "te_score": 0.762
+    },
+    "2": {
+        "va_score": 0.751,
+        "l2reg": 1e-05,
+        "tr_loss": 0.707,
+        "va_loss": 0.722,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.566,
+        "te_score": 0.753
+    },
+    "3": {
+        "va_score": 0.756,
+        "l2reg": 0.0001,
+        "tr_loss": 0.691,
+        "va_loss": 0.705,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.567,
+        "te_score": 0.75
+    },
+    "4": {
+        "va_score": 0.737,
+        "l2reg": 1e-05,
+        "tr_loss": 0.736,
+        "va_loss": 0.747,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.604,
+        "te_score": 0.733
+    },
+    "5": {
+        "va_score": 0.722,
+        "l2reg": 1e-05,
+        "tr_loss": 0.739,
+        "va_loss": 0.761,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.623,
+        "te_score": 0.702
+    },
+    "6": {
+        "va_score": 0.679,
+        "l2reg": 1e-05,
+        "tr_loss": 0.786,
+        "va_loss": 0.817,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.676,
+        "te_score": 0.69
+    },
+    "7": {
+        "va_score": 0.672,
+        "l2reg": 1e-05,
+        "tr_loss": 0.848,
+        "va_loss": 0.878,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.746,
+        "te_score": 0.664
+    },
+    "8": {
+        "va_score": 0.652,
+        "l2reg": 0.0001,
+        "tr_loss": 0.906,
+        "va_loss": 0.934,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.8,
+        "te_score": 0.644
+    },
+    "9": {
+        "va_score": 0.605,
+        "l2reg": 1e-05,
+        "tr_loss": 0.973,
+        "va_loss": 1.003,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.852,
+        "te_score": 0.619
+    },
+    "10": {
+        "va_score": 0.582,
+        "l2reg": 1e-05,
+        "tr_loss": 1.039,
+        "va_loss": 1.061,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.907,
+        "te_score": 0.604
+    },
+    "11": {
+        "va_score": 0.574,
+        "l2reg": 1e-05,
+        "tr_loss": 1.045,
+        "va_loss": 1.073,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.928,
+        "te_score": 0.568
+    },
+    "12": {
+        "va_score": 0.569,
+        "l2reg": 1e-05,
+        "tr_loss": 1.054,
+        "va_loss": 1.089,
+        "label_encoder": {
+            "0": 0,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5
+        },
+        "te_loss": 0.939,
+        "te_score": 0.578
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cuda",
+        "input_dim": 768,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 6,
+        "learning_rate": 0.01,
+        "clf": "logreg",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "data/he"
+    }
+}

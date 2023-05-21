@@ -1,0 +1,95 @@
+{
+    "model_name": "distilbert-base-multilingual-cased",
+    "probe_task": "bigram_shift",
+    "1": {
+        "va_score": 0.522,
+        "l2reg": 0.1,
+        "tr_loss": 0.69,
+        "va_loss": 0.693,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.691,
+        "te_score": 0.517
+    },
+    "2": {
+        "va_score": 0.675,
+        "l2reg": 1e-05,
+        "tr_loss": 0.599,
+        "va_loss": 0.605,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.567,
+        "te_score": 0.707
+    },
+    "3": {
+        "va_score": 0.73,
+        "l2reg": 0.01,
+        "tr_loss": 0.563,
+        "va_loss": 0.562,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.514,
+        "te_score": 0.771
+    },
+    "4": {
+        "va_score": 0.783,
+        "l2reg": 0.001,
+        "tr_loss": 0.522,
+        "va_loss": 0.514,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.446,
+        "te_score": 0.81
+    },
+    "5": {
+        "va_score": 0.763,
+        "l2reg": 1e-05,
+        "tr_loss": 0.525,
+        "va_loss": 0.518,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.464,
+        "te_score": 0.791
+    },
+    "6": {
+        "va_score": 0.72,
+        "l2reg": 0.001,
+        "tr_loss": 0.572,
+        "va_loss": 0.569,
+        "label_encoder": {
+            "I": 0,
+            "O": 1
+        },
+        "te_loss": 0.524,
+        "te_score": 0.751
+    },
+    "probing_arguments": {
+        "seed": 42,
+        "prepro_batch_size": 128,
+        "bucketing": true,
+        "model_is_random": false,
+        "train_batch_size": 256,
+        "eval_batch_size": 128,
+        "device": "cuda",
+        "input_dim": 768,
+        "num_hidden": 250,
+        "max_iter": 200,
+        "droupout_rate": 0.2,
+        "num_classes": 2,
+        "learning_rate": 0.01,
+        "clf": "logreg",
+        "num_kfold": 5,
+        "balanced": true,
+        "data_dir": "data/en"
+    }
+}
